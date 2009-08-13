@@ -21,7 +21,6 @@ module DefaultAssignIssuePatch
     # is set, set it.
     def assign_default_assignee
         self.assigned_to_id ||= @project.default_assignee_id
-      end
     end
   end
 end
