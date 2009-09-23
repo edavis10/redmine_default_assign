@@ -3,7 +3,7 @@ module DefaultAssignProjectPatch
     base.class_eval do
       unloadable
 
-      has_one :default_assignee, :through => :members, :source => :user
+      belongs_to :default_assignee, :class_name => "User"
     end
   end
 end
